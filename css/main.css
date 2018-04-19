@@ -84,6 +84,10 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin: 7px 0; }
+  .cent-bot-head .dropdown-toggle {
+    cursor: pointer; }
+  .cent-bot-head .dropdown-menu > .active > a, .cent-bot-head .dropdown-menu > .active > a:focus, .cent-bot-head .dropdown-menu > .active > a:hover {
+    background-color: #ff0000; }
 
 .curs-valut ul {
   padding: 0 40px 0 20px;
@@ -230,6 +234,9 @@ textarea {
   height: 384px;
   -o-object-fit: cover;
      object-fit: cover; }
+
+.slid-banners {
+  height: 384px; }
 
 .text-blue {
   color: #4a90e2; }
@@ -464,6 +471,51 @@ textarea {
 .logo {
   height: 49px; }
 
+.mod-fb {
+  display: none; }
+
+.modal-fb {
+  background-color: rgba(0, 0, 0, 0.16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 15px;
+  display: table; }
+  .modal-fb .mod-body {
+    display: table-cell;
+    vertical-align: middle; }
+    .modal-fb .mod-body .mod-cont {
+      margin: 0 auto;
+      padding: 40px 60px 200px 60px;
+      max-width: 540px;
+      min-height: 500px;
+      background: #fff url("../img/bg-fb.png") no-repeat bottom center/100%;
+      position: relative; }
+    .modal-fb .mod-body .mod-title {
+      font-size: 36px;
+      font-weight: bold; }
+    .modal-fb .mod-body .mod-btns {
+      margin-top: 40px; }
+      .modal-fb .mod-body .mod-btns button {
+        padding: 0 30px;
+        height: 40px;
+        font-size: 15px; }
+    .modal-fb .mod-body .icon-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 21px;
+      font-weight: 600;
+      font-style: normal;
+      cursor: pointer; }
+
+.btn-blue {
+  background-color: #35589c;
+  color: #fff; }
+
 @media (max-width: 991px) {
   .mob-menu {
     display: inline-block; }
@@ -534,4 +586,12 @@ textarea {
     border-bottom: 1px solid #eee;
     padding-bottom: 15px; }
   .word-404 {
-    font-size: 130px; } }
+    font-size: 130px; }
+  .modal-fb .mod-body .mod-cont {
+    padding: 40px 30px 100px 30px;
+    min-height: 300px; }
+  .modal-fb .mod-body .mod-btns button {
+    width: 100%;
+    margin-bottom: 10px; }
+  .modal-fb .mod-body .mod-title {
+    font-size: 25px; } }
